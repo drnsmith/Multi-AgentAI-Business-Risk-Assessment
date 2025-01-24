@@ -1,0 +1,8 @@
+llama-index
+langchain
+haystack
+autogen
+deepeval
+numpy
+pandas
+scikit-learn
