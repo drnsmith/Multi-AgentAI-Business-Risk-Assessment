@@ -1,19 +1,10 @@
-## Multi-Agent AI System for Business Risk Assessment
+# Multi-Agent AI System for Business Risk Assessment
 
 This project develops a Multi-Agent AI System designed to evaluate and monitor business risks by analysing diverse data sources, providing real-time insights, and facilitating proactive decision-making.
 
-### Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Architecture](#architecture)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+---
 
 ## Introduction
-
 In today's dynamic business environment, organisations face various risks that can impact their operations and profitability. This system leverages advanced AI frameworks to provide comprehensive risk assessments, enabling businesses to make informed decisions and mitigate potential threats.
 
 ## Features
@@ -24,6 +15,7 @@ In today's dynamic business environment, organisations face various risks that c
 - **Information Retrieval:** Handle complex queries related to risk assessment, providing precise and relevant information.
 - **Performance Evaluation:** Assess the system's outputs to ensure accuracy, relevance, and reliability in risk assessments.
 
+---
 ## Architecture
 The system comprises the following components:
 
@@ -42,13 +34,14 @@ The system comprises the following components:
 5. **Performance Evaluation:**
    - Employs **DeepEval** to assess the performance of the AI agents and the overall system, ensuring trustworthy outputs.
 
+---
 ## Installation
 To set up the project locally, follow these steps:
 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/Multi-AgentAI-Business-Risk-Assessment.git
+   git clone https://github.com/drnsmith/Multi-AgentAI-Business-Risk-Assessment.git
    ```
 
 2. **Navigate to the project directory:**
@@ -82,7 +75,7 @@ To set up the project locally, follow these steps:
    ```bash
    pip install -r requirements.txt
    ```
-
+----
 ## Usage
 After installation, you can run the system using the following command:
 
@@ -92,13 +85,13 @@ python main.py
 
 This will start the AI agents and begin the risk assessment process based on the configured data sources.
 
+---
 ## Contributing
 We welcome contributions to enhance the functionality and performance of this system. Please fork the repository and submit a pull request with your proposed changes.
 
+---
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
 
-By following this README, you should be able to set up and utilise the Multi-Agent AI System for Business Risk Assessment effectively. For any issues or questions, please open an issue in the repository. 
