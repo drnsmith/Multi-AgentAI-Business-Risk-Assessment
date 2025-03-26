@@ -19,8 +19,21 @@ The **Multi-Agent AI System for Business Risk Assessment** is designed to **eval
 ### 4. **Performance Monitoring & Evaluation**
 - Implements **DeepEval** to ensure **accuracy, relevance, and reliability** of risk assessments.
 - Continuously **optimises model performance** based on historical data.
+---
+### Multi-Agent Architecture
 
-## Architecture
+Powered by **AutoGen**, this system features several intelligent agents working in coordination to deliver high-quality insights.
+
+| Agent                     | Role & Capabilities                                                                 |
+|--------------------------|--------------------------------------------------------------------------------------|
+| **Financial Risk Agent**     | Parses financial reports, KPIs, and trends using LlamaIndex + LangChain.               |
+| **Compliance Risk Agent**    | Analyses regulatory filings and legal documents for red flags.                        |
+| **Market Intelligence Agent**| Scrapes news, analyst sentiment, and market narratives via Haystack.                  |
+| **Evaluator Agent**          | Monitors hallucinations, relevance, and output quality using DeepEval.               |
+| **Coordinator Agent**        | Manages agent communication, assigns tasks, and consolidates results (AutoGen).      |
+
+Each agent is modular, independently testable, and can be scaled or extended to other domains.
+
 - **Data Ingestion** → LlamaIndex
 - **NLP & Risk Interpretation** → LangChain
 - **Multi-Agent Risk Analysis** → AutoGen
