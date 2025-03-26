@@ -1,6 +1,7 @@
 # Multi-Agent AI System for Business Risk Assessment
 
-## Overview
+![Project Banner](./project_image.png)
+
 The **Multi-Agent AI System for Business Risk Assessment** is designed to **evaluate and monitor business risks** by analysing diverse data sources, providing **real-time insights**, and enabling **proactive decision-making**. This AI-driven tool helps businesses, financial institutions, and compliance teams **identify potential risks early**, ensuring smarter and faster decision-making.
 
 ## Features
