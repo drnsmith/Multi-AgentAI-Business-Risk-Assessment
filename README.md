@@ -9,12 +9,14 @@ It combines **retrieval**, **analysis**, and **LLM-based synthesis** to produce 
 
 ---
 
-## Features
-- **PDF Ingestion & Indexing**: Uses FAISS for fast vector search  
-- **Retriever Agent**: Surfaces top-K relevant document chunks  
-- **Analyst Agent**: Summarizes evidence into clear, concise answers  
-- **Citations Included**: Outputs page numbers + source files for traceability  
-- **Modular Agents**: Easy to extend with new logic (e.g., sentiment analysis, forecasting)  
+## Features 
+
+* **PDF Ingestion & Indexing** — FAISS vector store built from PDFs (via `scripts/build_index.py`) using OpenAI or local sentence-transformer embeddings.
+* **Retriever Agent** — similarity (or MMR) search, configurable `k` (currently 10).
+* **Analyst Agent** — concise, evidence-grounded answers (modern LangChain chain; deprecation-free).
+* **Synthesiser Agent** — converts analyst output into an **executive summary** (bullets, mitigations, bottom line).
+* **Citations Included** — page + source surfaced in outputs for traceability.
+* **Modular Agents** — clean separation; easy to add Evaluator/Coordinator later.
 
 ---
 
@@ -101,6 +103,7 @@ Built by [@drnsmith](https://github.com/drnsmith) as part of a production-grade 
 ```
 
 > **Note:** This repository was cleaned and reset on *2025-09-09* to provide a clear, review-ready version of the project.
+
 
 
 
