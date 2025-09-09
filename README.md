@@ -29,6 +29,8 @@ It combines **retrieval**, **analysis**, and **LLM-based synthesis** to produce 
 3. **Tighter Financing & Regulatory Scrutiny**: Decline in project finance and cross-border M&As due to tighter conditions and more oversight.  
 
 ![Project Banner](./image2.png)
+![Project Banner](./image3.png)
+
 _Citations: data/wir2024.pdf, pages 12 and 103._
 
 ---
@@ -99,6 +101,7 @@ Built by [@drnsmith](https://github.com/drnsmith) as part of a production-grade 
 ```
 
 > **Note:** This repository was cleaned and reset on *2025-09-09* to provide a clear, review-ready version of the project.
+
 
 
 
