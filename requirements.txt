@@ -1,0 +1,24 @@
+# --- Core server/UI ---
+Flask==3.0.0
+Jinja2==3.1.4
+gunicorn==21.2.0
+python-dotenv==1.0.1
+
+# --- Data / NLP / Vector store ---
+numpy==1.26.4
+pandas==2.2.2
+faiss-cpu==1.7.4
+scikit-learn==1.4.2
+sentence-transformers==2.7.0
+pypdf==4.2.0
+tiktoken==0.7.0
+
+# --- LLM Orchestration / RAG ---
+langchain==0.1.20
+llama-index==0.10.62
+openai==1.35.10
+
+# --- Multi-agent & Retrieval (optional but referenced by structure) ---
+pyautogen==0.2.27         # AutoGen (multi-agent)
+haystack-ai==2.0.0        # Haystack v2 package name
+

@@ -1,0 +1,27 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Risk Auditor Agent</title>
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+<body>
+    <main>
+        <h1>Risk Auditor Agent</h1>
+        <form hx-post="/ask" hx-target="#response" hx-swap="innerHTML">
+            <label for="question">Ask a question about investment risk:</label>
+            <input type="text" id="question" name="question" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="response" style="margin-top: 2em;"></div>
+    </main>
+</body>
+</html>
+<!-- templates/index.html -->
+<!-- This is the main page where users can ask questions about investment risk. -->
+<!-- It uses HTMX to submit the question and update the response area without a full page reload
+

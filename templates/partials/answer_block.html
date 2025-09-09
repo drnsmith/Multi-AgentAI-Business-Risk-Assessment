@@ -1,0 +1,53 @@
+<div>
+  {% if answer %}
+    <h3>📢 Answer:</h3>
+    <p>{{ answer }}</p>
+  {% else %}
+    <p>No answer returned.</p>
+  {% endif %}
+</div>
+
+{% if scores %}
+  <div>
+    <h4>🧠 GPT Evaluation</h4>
+    <ul>
+      <li>Relevance: {{ scores.relevance }}</li>
+      <li>Completeness: {{ scores.completeness }}</li>
+      <li>Faithfulness: {{ scores.faithfulness }}</li>
+    </ul>
+  </div>
+{% endif %}
+
+{% if sources %}
+  <div>
+    <h4>📄 Sources:</h4>
+    <ul>
+      {% for source in sources %}
+        <li>
+          <strong>{{ source.file }}</strong>, page {{ source.page }}<br>
+          <em>{{ source.snippet }}</em>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
+{% if suggest_reset %}
+  <div style="margin-top: 1em; border: 1px solid red; padding: 1em;">
+    <strong>⚠️ This looks like a new topic.</strong><br>
+    Would you like to start fresh?
+    <form method="post" action="/ask">
+      <input type="hidden" name="question" value="{{ question }}">
+      <input type="hidden" name="reset" value="true">
+      <button type="submit">Yes, Start Fresh</button>
+    </form>
+  </div>
+{% endif %}
+
+
+
+
+
+
+
+<!-- This template displays the answer, evaluation scores, and sources related to the answer -->       

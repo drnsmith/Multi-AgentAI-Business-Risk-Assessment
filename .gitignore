@@ -1,0 +1,30 @@
+cat > .gitignore << 'EOF'
+# Env & secrets
+.env
+.venv/
+venv/
+
+# Python artefacts
+__pycache__/
+*.pyc
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Logs & local artefacts
+*.log
+logs/
+chat_log.jsonl
+reports/
+
+# Big local data / indexes (keep small samples only)
+vectorstore_index/
+data/
+EOF
+.venv/
+venv/
+data/
+vectorstore_index/
+__pycache__/
+*.pyc
+
